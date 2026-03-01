@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tvoje jméno | Product-minded Frontend Developer</title>
+    <meta
+      name="description"
+      content="Dospělá osobní landing page: hero, about, interests, projects, kontakt a moderní tmavý design."
+    >
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Domů">Tvoje jméno</a>
+        <nav aria-label="Hlavní navigace">
+          <ul class="main-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Personal landing page</p>
+            <h1 id="hero-title">Tvořím použitelné weby s důrazem na kvalitu a detail.</h1>
+            <p class="hero-lead">
+              Jsem frontend vývojář se zaměřením na čisté rozhraní, přístupnost a
+              efektivní spolupráci s produktem i designem.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">Zobrazit projekty</a>
+              <a class="button button-secondary" href="#contact">Kontaktovat mě</a>
+            </div>
+          </div>
+          <aside class="hero-panel" aria-label="Rychlý profil">
+            <h2>Rychlý profil</h2>
+            <ul>
+              <li>5+ let práce na webových produktech</li>
+              <li>Specializace: HTML, CSS, design systémy</li>
+              <li>Důraz na výkon, čitelnost a a11y</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container section-stack">
+          <h2 id="about-title">About</h2>
+          <p>
+            Kombinuji technickou preciznost s estetickým citem. Mým cílem je
+            vytvářet stránky, které jsou rychlé, přehledné a snadno použitelné na
+            mobilu i desktopu. V projektech dbám na dobré UX základy, konzistentní
+            komponenty a dlouhodobě udržitelný kód.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="interests" aria-labelledby="interests-title">
+        <div class="container section-stack">
+          <h2 id="interests-title">Interests</h2>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Frontend architektura</h3>
+              <p>
+                Navrhuji strukturu UI tak, aby se web dal snadno rozvíjet bez
+                technického dluhu.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Typografie a vizuální systém</h3>
+              <p>
+                Věnuji pozornost rytmu stránky, hierarchii a čitelnosti obsahu v
+                různých kontextech.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Sport</h3>
+              <p>
+                Aktivní pohyb mi pomáhá držet energii, disciplínu i mentální
+                rovnováhu při dlouhodobé práci.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container section-stack">
+          <h2 id="projects-title">Projects</h2>
+          <div class="card-grid">
+            <article class="card project-card">
+              <h3>Fintech Dashboard</h3>
+              <p>
+                Návrh a implementace responzivního dashboardu s důrazem na
+                informační hierarchii a přístupnost.
+              </p>
+            </article>
+            <article class="card project-card">
+              <h3>E-commerce Landing</h3>
+              <p>
+                Konverzní stránka s modularitou sekcí, výkonnostní optimalizací a
+                čistým UI.
+              </p>
+            </article>
+            <article class="card project-card">
+              <h3>Design System Starter</h3>
+              <p>
+                Sada základních komponent a pravidel pro sjednocení stylu napříč
+                více produktovými týmy.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container section-stack contact-panel">
+          <h2 id="contact-title">Contact</h2>
+          <p>
+            Zajímá tě spolupráce nebo konzultace? Napiš mi na
+            <a href="mailto:ahoj@example.com">ahoj@example.com</a> nebo se ozvi přes
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Tvoje jméno</p>
+        <a href="#home">Zpět nahoru</a>
+      </div>
+    </footer>
+  </body>
+</html>
