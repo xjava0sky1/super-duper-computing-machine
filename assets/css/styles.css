@@ -1,0 +1,245 @@
+:root {
+  color-scheme: dark;
+
+  --bg: #04060e;
+  --surface: #0b1224;
+  --surface-elev: #101b36;
+  --text: #ebf1ff;
+  --muted: #a8b8df;
+  --accent: #3b7bff;
+  --accent-strong: #6298ff;
+  --border: rgba(91, 146, 255, 0.33);
+  --focus: #8cb2ff;
+
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4rem;
+
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+
+  --shadow: 0 18px 56px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 85% 8%, rgba(59, 123, 255, 0.25), transparent 33%),
+    radial-gradient(circle at 12% 20%, rgba(98, 152, 255, 0.14), transparent 30%),
+    linear-gradient(145deg, #060d1b, var(--bg));
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+
+.skip-link:focus-visible {
+  left: var(--space-3);
+  top: var(--space-3);
+  z-index: 1000;
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius-sm);
+  background: #091225;
+  color: #eef4ff;
+  outline: 2px solid var(--focus);
+}
+
+.page-shell {
+  width: min(1120px, 94vw);
+  margin: 0 auto;
+  padding: var(--space-5) 0;
+}
+
+.section {
+  margin-bottom: var(--space-5);
+}
+
+.hero {
+  padding: clamp(var(--space-4), 6vw, var(--space-7));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(155deg, rgba(59, 123, 255, 0.2), rgba(4, 6, 14, 0.94));
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0 0 var(--space-2);
+  color: #d8e5ff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 8vw, 3.8rem);
+  line-height: 1.08;
+  margin-bottom: var(--space-3);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  line-height: 1.2;
+  margin-bottom: var(--space-3);
+}
+
+h3 {
+  font-size: 1.12rem;
+  margin-bottom: var(--space-2);
+}
+
+p {
+  color: var(--muted);
+  max-width: 68ch;
+}
+
+.lead {
+  font-size: clamp(1rem, 2.8vw, 1.2rem);
+  margin-bottom: var(--space-4);
+}
+
+.hero-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.68rem 1.12rem;
+  font-weight: 620;
+  border: 1px solid transparent;
+  transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #f2f6ff;
+}
+
+.btn-primary:hover {
+  background: var(--accent-strong);
+}
+
+.btn-secondary {
+  border-color: var(--border);
+  color: #d7e5ff;
+  background: rgba(8, 16, 31, 0.68);
+}
+
+.btn-secondary:hover {
+  background: rgba(15, 28, 54, 0.95);
+}
+
+.section-heading {
+  margin-bottom: var(--space-3);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.cards-grid {
+  grid-template-columns: 1fr;
+}
+
+.card-item {
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: linear-gradient(150deg, rgba(16, 27, 53, 0.95), rgba(9, 14, 28, 0.95));
+}
+
+.card-item p {
+  margin-bottom: 0;
+}
+
+.project-card {
+  min-height: 190px;
+}
+
+a {
+  color: #b8cdff;
+}
+
+a:hover {
+  color: #dbe8ff;
+}
+
+a:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding-top: var(--space-4);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.94rem;
+}
+
+@media (min-width: 700px) {
+  .page-shell {
+    width: min(1120px, 92vw);
+    padding-top: var(--space-6);
+  }
+
+  .section {
+    margin-bottom: var(--space-6);
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .project-card {
+    min-height: 210px;
+  }
+}
